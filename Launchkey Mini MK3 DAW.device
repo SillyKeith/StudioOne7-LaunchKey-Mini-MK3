@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DeviceDefinition
+    classID="{A30E4B8A-47C9-4A7A-8FF5-5EB3F36AE5F6}"
+
+    vendor="Novation"
+    name="LaunchKey DAW Controller"
+
+    category="Keyboard"
+
+    nativeCode="JSKeyboardDevice"
+	classFile="MK3/LaunchkeyMidiDevice.js"
+	classFile.functionName="createLaunchkeyDawDeviceInstance"
+
+	surfaceFile="MK3/Launchkey Common.surface.xml"
+	scriptFile="MK3/LaunchkeyComponent.js"
+	scriptFile.functionName="createLaunchkeyDawComponentInstance"
+
+	detectorReceivePortName="MIDIOUT2 (Launchkey Mini MK3 MIDI)"
+/>

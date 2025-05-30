@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ******************************************************************************************** -->
+<!-- Novation Launchkey Mini MK3 Keyboard Device Definition -->
+<!-- ******************************************************************************************** -->
+
+<!-- Ports, Launchkey Mini MK3:
+ Windows [receive/in]: Launchkey Mini MK3 MIDI Port
+ (DAW) Launchkey Mini MK3 DAW Port
+
+ Mac/Linux [receive/in]: TBD
+
+Possible adds??
+ 	sendMidiClock="1"
+	feedbackSupported="1"
+ -->
+
+<DeviceDefinition
+    vendor="Novation"
+    name="LaunchKey MIDI Basic"
+
+    classID="{A30E4B8A-47C9-4A7A-8FF5-5EB3F36AE5F7}"
+    category="Keyboard"
+    nativeCode="JSKeyboardDevice"
+    classFile="MK3/Launchkey Midi_BASIC.js"
+    classFile.functionName="createLaunchkeyBasicDeviceInstance"
+
+    surfaceFile="MK3/Launchkey Basic.surface.xml"
+    scriptFile="MK3/LaunchKey Component_BASIC.js"
+    scriptFile.functionName="createLaunchKeyBasicComponentInstance"
+
+    detectorPortName="Launchkey Mini MK3 MIDI"
+/>
